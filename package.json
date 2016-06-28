@@ -1,0 +1,12 @@
+{
+  "name": "pjt",
+  "version": "1.1.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files **/**"
+  },
+  "author": "",
+  "license": "ISC"
+}

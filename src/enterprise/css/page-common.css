@@ -1,0 +1,98 @@
+/*
+* @Author: sison.luo
+* @Date:   2016-06-15 16:14:03
+* @Last Modified by:   sison.luo
+* @Last Modified time: 2016-06-16 15:08:33
+*/
+
+.select-group + .input-group{ margin-left: -1px;}
+.spline{ height: 0; border-bottom: 1px solid #eee; margin: 1px 0;}
+.page-filter{ padding: 10px 0 35px;}
+.selectDate{ line-height: 34px;}
+.page-filter .filterLine{ position: relative; padding: 5px 0 5px 70px;  font: normal 12px/18px simsun; transition:all .2s ease-in-out;}
+.page-filter .filterLine b,
+.page-filter .search-group .seartxt{ position: absolute; top:12px; left: 0; font-size: 12px; font-family: simsun; display: block; width: 60px; text-align: right; color: #888; font-weight: normal; }
+.page-filter .filterLine p a{ display: inline-block; float: left; color: #333; margin:5px 10px 5px 0; padding: 1px 15px; text-decoration: none; transition:all .2s ease; border-radius: 2px; border: 1px solid #fff;}
+.page-filter .filterLine p a.check,
+.page-filter .filterLine p a.check.selectItem:hover{ background-color: #0D8DDC; border-color: #0D8DDC; color: #fff; /*text-shadow:1px 1pdx 0 #127BBB;*/}
+.page-filter .filterLine p a.selectItem:hover{ border: 1px solid #0D8DDC; background-color: #fff; color: #0D8DDC;}
+.page-filter .filterLine p em{ display: inline-block; float: left;  color: #888; font-style: normal; margin: 7px 5px;}
+.page-filter .filterLine.more{ padding: 0 100px 0 60px; height: 32px; overflow: hidden;}
+.page-filter .toggle{ display: block; position: absolute; right: 0; top: 0; line-height: 32px; padding: 0 24px 0 10px; cursor: pointer; text-decoration: none;}
+.page-filter .toggle i{ width:10px; height: 10px; display: block; position: absolute; right: 7px; top: 10px;}
+.page-filter .filterLine.withSelect{ padding: 8px 0 8px 70px;}
+.page-filter .filterLine.withSelect b{ top: 17px;}
+.page-filter .search-group{ padding: 5px 0 0 68px; position:relative;}
+.page-filter .search-group label{ display: block;}
+.page-filter.quote .search-group{ padding: 5px 0 0 0;}
+.page-filter .search-group .txt{ width: 250px;}
+.highSearch{ height: 0; overflow: hidden;}
+.highSearch.show{ height: 435px; overflow: visible;}
+/*覆盖树形菜单（使用了easyui）*/
+.page-filter .combo { border-radius: 0; border: 1px solid #ddd; box-shadow: 0 0 0 #fff;}
+.page-filter .combo input {background-color: transparent; color: #666;}
+.page-filter .textbox-addon {  top: 5px;}
+.page-filter .combo-arrow { height: 27px; background-color: transparent;}
+.page-filter .textbox { padding: 5px 0;}
+
+
+.setOrder{ height: 34px;}
+.setOrder li{ float: left; padding: 0 19px 0 20px; border: 1px solid #ddd;  cursor: pointer;}
+.setOrder li+li{ margin-left: -1px;}
+.setOrder li.cur{ background-color: #278ADD; border-color: #278ADD; color: #fff; position: relative;}
+.setOrder li span{ display: block; padding: 0 16px 0 0; height: 32px; line-height: 32px; margin-left: -1px; background-repeat: no-repeat; background-position:  right center}
+
+
+.setFunction{ position: relative; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 13px 10px 12px;}
+.setFunction .selectRange{ padding: 0 10px 0 0; font-family: simsun; line-height:36px;}
+.funBtns li a{ display: block; height: 32px; line-height: 32px; position: relative; z-index:11}
+.funBtns li a span{ display: none;}
+.funBtns li a.cur span{ display: block;}
+
+
+.setBtns li{ border: 1px solid #ccc;}
+.setBtns li a{ display: block; position: relative; height: 32px; width: 32px; padding: 1px 5px 0 5px;}
+.setBtns li+li{ margin-left: -1px;}
+.setBtns li a em{ position: absolute; background-color: #FDF8E4; border: 1px solid #D0BF8D; padding: 10px; top: 40px; left: -10px; white-space: nowrap; display: none; font-family: simsun;z-index:10;}
+.setBtns li a:hover em{ display: block;}
+
+
+.setFunction + .page-table{ margin-top: -1px;}
+table{ border-collapse: collapse;}
+table.table{ width: 100%;}
+table.table thead th{ background-color: #F8F8F8; border-style: solid; border-width: 1px 0; border-color: #ddd; line-height: 20px; padding: 10px; font: normal 12px/20px verdana,simsun; color: #666;}
+table.table{}
+table.table td{ vertical-align: middle; padding:10px; border-bottom: 1px solid #eee; line-height: 24px;}
+/*内容居中*/
+table.table-center th,
+table.table-center td{ text-align: center;}
+/*大表格*/
+table.table-large td{padding:15px 10px;}
+/*小表格*/
+table.table-large td{padding:5px 10px;}
+/*内容宋体*/
+table.table-song th,
+table.table-song td{ font-family: simsun;}
+
+.page-table{position:relative;}
+.hasPagination{padding-bottom:82px}
+.pagination-bottom,
+.makePGbottom{position:absolute;width:100%;bottom:0;overflow:hidden}
+.hasPagination.hasRemark{ padding-bottom: 141px;}
+.page-table .remark{ width: 100%; bottom: 62px;  position: absolute; padding: 20px 0; border-top: 1px solid #eee;}
+.page-table .remark dl{ font-size: 12px; line-height: 18px; font-family: verdana,simsun;}
+.page-table .remark dd{ padding: 0 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

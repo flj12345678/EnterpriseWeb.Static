@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自定义指标模块</title>
+    <link rel="stylesheet" type="text/css" href="src/enterprise/css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="src/enterprise/css/components.css" />
+    <link rel="stylesheet" type="text/css" href="src/enterprise/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="src/enterprise/css/page-common.css" />
+    <link rel="stylesheet" type="text/css" href="src/enterprise/css/zbPage.css" />
+</head>
+<body>
+<div class="widthly">
+<div id="modules">
+
+    <!--模块选择-->
+    <div class="styleSelect">
+      <a href="#">TCF建模</a>
+      <a href="#">全新建模</a>
+    </div>
+
+    <!--TCF模块选择-->
+    <div class="TCF-wrapper">
+        <div id="abilityModule">
+            <div class="zb-module-group" id="zbGroup">
+                <!--模块名称-->
+                <div class="zb-header">
+                    <span><b>模块一：</b> <input type="text" value="能力"/></span>
+                   <span class="fr">
+                     <a href="#" class="close-x icon-close icon"></a>
+                   </span>
+                </div>
+                <!--模块查找-->
+                <div class="module-search input-group button">
+                    <label class="fr">
+                        <input class="txt" type="text">
+                        <span><button class="icon icon-search" type="submit"></button></span>
+                    </label>
+                </div>
+                <div class="zb-body">
+                    <!--TCF建模左侧-->
+                    <div class="TCF-left mdLeft fl">
+                        <p class="mdTit">未选指标</p>
+                        <div class="tl-scroll">
+                            <ul class="clearfix tl-group">
+                                <li class="module-item"  data-groupid="group1">
+                                    <h6>
+                                        <span>1</span>
+                                        <input type="text" value="了解商业运作" readonly="readonly"/>
+                                        <em class="close-x icon-close icon "></em>
+                                    </h6>
+                                    <ul class="clearfix tl-itemGroup">
+                                        <li class="lm-item" id="1" data-groupid="group1">
+                                            <span>1.1</span>
+                                            <input type="text" value="商业头脑" data-value="商业头脑" readonly="readonly">
+                                            <em class="close-x icon-close icon"></em>
+                                        </li>
+                                        <li class="lm-item" id="2" data-groupid="group1">
+                                            <span>1.2</span>
+                                            <input type="text" value="技术学习" data-value="技术学习" readonly="readonly">
+                                            <em class="close-x icon-close icon"></em>
+                                        </li>
+                                    </ul>
+                                    <div class="moveZone"></div>
+                                </li>
+                                <li class="module-item" data-groupid="group2">
+                                    <h6>
+                                        <span>1</span>
+                                        <input type="text" value="作出复杂决策" readonly="readonly"/>
+                                        <em class="close-x icon-close icon"></em>
+                                    </h6>
+                                    <ul class="clearfix tl-itemGroup"">
+                                <li class="lm-item" id="3" data-groupid="group2">
+                                    <span>1.1</span>
+                                    <input type="text" value="商业头脑" data-value="商业头脑" readonly="readonly">
+                                    <em class="close-x icon-close icon"></em>
+                                </li>
+                                <li class="lm-item" id="4" data-groupid="group2">
+                                    <span>1.2</span>
+                                    <input type="text" value="技术学习" data-value="技术学习" readonly="readonly">
+                                    <em class="close-x icon-close icon"></em>
+                                </li>
+                            </ul>
+                            <div class="moveZone"></div>
+                            </li>
+                            <li  class="module-item"  data-groupid="group3">
+                                <h6>
+                                    <span>1</span>
+                                    <input type="text" value="了解商业运作" readonly="readonly"/>
+                                    <em class="close-x icon-close icon"></em>
+                                </h6>
+                                <ul class="clearfix tl-itemGroup">
+                                    <li class="lm-item" id="5" data-groupid="group3">
+                                        <span>1.1</span>
+                                        <input type="text" value="商业头脑" data-value="商业头脑" readonly="readonly">
+                                        <em class="close-x icon-close icon"></em>
+                                    </li>
+                                    <li class="lm-item" id="6" data-groupid="group3">
+                                        <span>1.2</span>
+                                        <input type="text" value="技术学习" data-value="技术学习" readonly="readonly">
+                                        <em class="close-x icon-close icon"></em>
+                                    </li>
+                                </ul>
+                                <div class="moveZone"></div>
+                            </li>
+                            <li  class="module-item" data-groupid="group4">
+                                <h6>
+                                    <span>1</span>
+                                    <input type="text" value="了解商业运作" readonly="readonly"/>
+                                    <em class="close-x icon-close icon"></em>
+                                </h6>
+                                <ul class="clearfix tl-itemGroup">
+                                    <li class="lm-item" id="7" data-groupid="group4">
+                                        <span>1.1</span>
+                                        <input type="text" value="商业头脑" data-value="商业头脑" readonly="readonly">
+                                        <em class="close-x icon-close icon"></em>
+                                    </li>
+                                    <li class="lm-item" id="8" data-groupid="group4">
+                                        <span>1.2</span>
+                                        <input type="text" value="技术学习" data-value="技术学习" readonly="readonly">
+                                        <em class="close-x icon-close icon"></em>
+                                    </li>
+                                </ul>
+                                <div class="moveZone"></div>
+                             </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--TCF建模右侧-->
+                    <div class="TCF-right mdRight fl">
+                        <p class="mdTit">已选指标</p>
+                        <div class="tr-content">
+                            <ul class="clearfix tr-group" id="sortable">
+                                <li class="add-out-tcf clearfix">
+                                    <b>+</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--全新模块选择-->
+    <div class="brandNew-wrapper clearfix">
+        <div id="bnModule1" class="bnModule clearfix">
+           <div class="zb-module-group" id="zbGroup2">
+             <div class="zb-header">
+                 <span><b>模块一：</b> <input type="text" value="新建模块1"/></span>
+                   <span class="fr">
+                     <a href="#" class="close-x icon-close icon"></a>
+                     <a href="#" class="pickUp icon-arrow-up2 icon"></a>
+                   </span>
+             </div>
+            <div class="zb-body">
+              <div class="bn-content">
+                  <div class="bn-left mdLeft fl">
+                      <p class="mdTit">请选择层级样式</p>
+                      <div class="zbSelect">
+                          <div class="radio-group">
+                              <div class="radione  checked">
+                                  <input type="radio" name="radiobj" value="a">
+                                  <span>样式一（一层指标结构）</span>
+                              </div>
+                              <div class="radione radio2">
+                                  <input type="radio" name="radiobj" value="a">
+                                  <span>样式二（二层指标结构）</span>
+                              </div>
+                              <div class="radione radio3">
+                                  <input type="radio" name="radiobj" value="a">
+                                  <span>样式三（三层指标结构）</span>
+                              </div>
+                          </div>
+                          <div class="bn-style1  clearfix">
+                              <div class="style1-content style1">
+                                  <ul>
+                                      <li>
+                                          <input type="text" value="一级指标" readonly="readonly"/>
+                                          <em class="close-x icon-close icon"></em>
+                                      </li>
+                                      <li>
+                                          <input type="text" value="一级指标" readonly="readonly"/>
+                                          <em class="close-x icon-close icon"></em>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="bn-style2  clearfix">
+                              <div class="style2-content styleGroup">
+                                  <ul>
+                                      <li class="module-item">
+                                          <h6>
+                                              <input type="text" value="一级指标" readonly="readonly"/>
+                                              <em class="close-x icon-close icon"></em>
+                                          </h6>
+                                          <ul>
+                                              <li class="bm-item">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item marAdd">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item marAdd">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="bn-style3 clearfix">
+                              <div class="style3-content styleGroup">
+                                  <ul>
+                                      <li class="module-item">
+                                          <h6>
+                                              <input type="text" value="一级指标" readonly="readonly"/>
+                                              <em class="close-x icon-close icon"></em>
+                                          </h6>
+                                          <ul>
+                                              <li class="bm-item">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item marAdd">
+                                                  <input type="text" value="二级指标" data-value="二级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item item3 item-dev">
+                                                  <input type="text" value="三级指标" data-value="三级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                              <li class="bm-item item3 marAdd">
+                                                  <input type="text" value="三级指标" data-value="三级指标" readonly="readonly">
+                                                  <em class="close-x icon-close icon"></em>
+                                              </li>
+                                          </ul>
+                                      </li>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bn-right mdRight fl">
+                      <p class="mdTit">指标</p>
+                      <div class="zbShow">
+                          <div class="zb-style1 style1">
+                              <ul>
+                                  <li class="zbAdd add-mdGroup">
+                                      <b>点击此创建新指标</b>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="zb-style2">
+                              <ul>
+                                  <li class="zbAdd add-mdGroup">
+                                      <b>点击此创建一级新指标</b>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="zb-style3">
+                              <ul>
+                                  <li class="zbAdd add-mdGroup">
+                                      <b>点击此创建一级新指标</b>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class="zbAdd add-zbGroup clearfix">
+            <b>点击此创建新指标</b>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="src/libs/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="src/enterprise/js/components/radio.js"></script>
+<script type="text/javascript" src="src/enterprise/js/zbModule.js"></script>
+<script type="text/javascript" src="src/enterprise/js/creatModule.js"></script>
+<script type="text/javascript" src="src/enterprise/js/plugins/slimScroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="src/enterprise/js/plugins/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function(){
+
+        //指标组样式加载
+        optionSubAlign();
+
+        //TCF建模导航条
+        if ($(".zb-module-group").length > 0) {
+            $('.zb-module-group .TCF-left .tl-scroll').slimScroll({
+                allowPageScroll: true,
+                height: '200px',
+                alwaysVisible: true,
+                railVisible: true,
+                railColor: '#ebf0f4',
+                size: '10px',
+                color:'#b0c7d5',
+                borderRadius: '0'
+            });
+        }
+
+        //TCF建模唾液放置加载
+        var id=$('.zb-module-group').attr('id');
+        OnlineMeasure.initDragAndDrop(id);
+
+
+        //全新建模模块加载
+        $(".brandNew-wrapper>div").each(function(){
+            var Id=$(this).attr("id");
+                zbBuilt(Id);
+        });
+
+    });
+</script>
+</body>
+</html>
